@@ -10,30 +10,14 @@ import  bulbasaurIMG from '../images/bulbasaur.png';
 const imageArr = [
 		pikachuIMG,
 		squirtleIMG,
-		mewIMG,
-		bulbasaurIMG
+		bulbasaurIMG,
+		mewIMG
 	];
 
 
-let currentImg = '';
-let randomImage = ''
-
-
-
-const randomizeImage = () => {
-
-
-	 randomImage = imageArr[Math.floor(Math.random() * imageArr.length)];
-	// for (let i = 0; i < imageArr.length; i++) {
-	// 	console.log(imageArr[i]);
-	// 	randomImage = imageArr[i];
-
-}
-
-
 function setTileImages(stateset, image) {
-	randomizeImage();
-	stateset(image)
+
+	return stateset(image)
 }
 
 export function Body () {
@@ -57,11 +41,14 @@ useEffect(() => {
 		// const [tile1, setTile2] = useState()
 
 	const newClick = () => {
-	currentImg = randomImage
-		setTileImages(setTile1, randomImage);
-		setTileImages(setTile2, randomImage);
-		setTileImages(setTile3, randomImage);
-		setTileImages(setTile4, randomImage);
+		setTileImages(setTile1, imageArr[0]);
+		setTileImages(setTile2, imageArr[1]);
+		setTileImages(setTile3, imageArr[2]);
+		setTileImages(setTile4, imageArr[3]);
+
+		imageArr.sort( () => {
+			return Math.random() - 0.5
+		})
 	}
 
 	
