@@ -1,0 +1,22 @@
+.headerWrapper {
+	display: flex;
+	border-style: solid;
+	border-color: black;
+	justify-content: space-between;
+}
+
+.gameTitleWrap {
+	border-style: solid;
+	border-color: black;
+}
+
+.scoreDivsWrapper {
+	border-style: solid;
+	border-color: black;
+
+}
+
+.scoreDivs {
+	border-style: solid;
+	border-color: black;
+}
