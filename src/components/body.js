@@ -77,6 +77,7 @@ console.log(obj)
 
   return (
     <div className="body">
+    <div className='tilesWrapper'>
       <ImageTiles
         className="cardTiles"
         onClick={() => onClick(tile1)}
@@ -107,7 +108,9 @@ console.log(obj)
         onClick={() => onClick(tile6)}
         image={tile6}
       />
-    </div>
+      </div>
+      <div className='slotsWrapper'> hello </div>
+  	</div>
   );
 }
 

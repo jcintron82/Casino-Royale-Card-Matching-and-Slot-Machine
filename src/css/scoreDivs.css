@@ -4,21 +4,36 @@
 	border-color: black;
 	background-color: #141414;
 	justify-content: space-between;
-	height: 10vh;
+	height: 15vh;
+	color: white;
 }
 
 .gameTitleWrap {
 	border-style: solid;
 	border-color: black;
+	padding: 10px;
+	text-align: center;
+
+}
+
+.gameDescriptionWrap {
+	padding: 10px;
 }
 
 .scoreDivsWrapper {
 	border-style: solid;
 	border-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 
 }
 
 .scoreDivs {
 	border-style: solid;
 	border-color: black;
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

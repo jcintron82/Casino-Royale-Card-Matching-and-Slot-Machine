@@ -29,15 +29,15 @@ export function Header({ className }) {
     <div className="headerWrapper">
       <div className="gameTitleWrap">
         {" "}
-        Pokemon Memory Game
-        <div>
+        Casino Royale!
+        <div className='gameDescriptionWrap'>
           {" "}
-          Test your memory by selecting a card but not the same one twice!{" "}
+          Select all the cards..but not the same twice!{" "}
         </div>
       </div>
       <div className="scoreDivsWrapper">
-        <ScoreDivs scoreType="Current Score " text={score} />
-        <ScoreDivs scoreType="High Score " text={highScore} />
+        <ScoreDivs scoreType="Score: " text={score} />
+        <ScoreDivs scoreType="High: " text={highScore} />
         <div>{}</div>
       </div>
     </div>
