@@ -1,67 +1,87 @@
-import { ScoreDivs } from './scoreDivs'
-import { useState, useEffect } from 'react';
-import { ImageTiles } from './imageTiles'
-import  pikachuIMG from '../images/pikachu.png';
-import  mewIMG from '../images/mew.png';
-import  squirtleIMG from '../images/squirtle.jpg';
-import  bulbasaurIMG from '../images/bulbasaur.png';
-// const pikaIMG = <img src= '../images/stock.avif'></img>
+import { ScoreDivs } from "./scoreDivs";
+import { useState, useEffect } from "react";
+import { ImageTiles } from "./imageTiles";
+import { functionFloat } from "./header";
+import pikachuIMG from "../images/pikachu.png";
+import mewIMG from "../images/mew.png";
+import squirtleIMG from "../images/squirtle.jpg";
+import bulbasaurIMG from "../images/bulbasaur.png";
 
-const imageArr = [
-		pikachuIMG,
-		squirtleIMG,
-		bulbasaurIMG,
-		mewIMG
-	];
+const events = [];
 
+const imageArr = [pikachuIMG, squirtleIMG, bulbasaurIMG, mewIMG];
 
 function setTileImages(stateset, image) {
-
-	return stateset(image)
+  functionFloat.scoreCounter();
+  return stateset(image);
 }
 
-export function Body () {
+export function Body() {
+  const [xstate, setxstate] = useState(null);
 
-useEffect(() => {
-	newClick()},[]);
-	
-		const [tile1, setTile1] = useState()
-		const [tile2, setTile2] = useState()
-		const [tile3, setTile3] = useState()
-		const [tile4, setTile4] = useState()
+  useEffect(() => {
+    newClick();
+  }, []);
 
-		// const [tile1, setTile2] = useState()
-		// const [tile1, setTile2] = useState()
-		// const [tile1, setTile2] = useState()
-		// const [tile1, setTile2] = useState()
+  const [tile1, setTile1] = useState();
+  const [tile2, setTile2] = useState();
+  const [tile3, setTile3] = useState();
+  const [tile4, setTile4] = useState();
 
-		// const [tile1, setTile2] = useState()
-		// const [tile1, setTile2] = useState()
-		// const [tile1, setTile2] = useState()
-		// const [tile1, setTile2] = useState()
+  // const [tile1, setTile2] = useState()
+  // const [tile1, setTile2] = useState()
+  // const [tile1, setTile2] = useState()
+  // const [tile1, setTile2] = useState()
 
-	const newClick = () => {
-		setTileImages(setTile1, imageArr[0]);
-		setTileImages(setTile2, imageArr[1]);
-		setTileImages(setTile3, imageArr[2]);
-		setTileImages(setTile4, imageArr[3]);
+  // const [tile1, setTile2] = useState()
+  // const [tile1, setTile2] = useState()
+  // const [tile1, setTile2] = useState()
+  // const [tile1, setTile2] = useState()
 
-		imageArr.sort( () => {
-			return Math.random() - 0.5
-		})
-	}
+  const newClick = (event) => {
+    setTileImages(setTile1, imageArr[0]);
+    setTileImages(setTile2, imageArr[1]);
+    setTileImages(setTile3, imageArr[2]);
+    setTileImages(setTile4, imageArr[3]);
 
-	
-	return (
-		
+    imageArr.sort(() => {
+      return Math.random() - 0.5;
+    });
+  };
 
-		<div className='body' >
-		<ImageTiles className='cardTiles' onClick={newClick} image={ tile1 }/>
-		<ImageTiles className='cardTiles' onClick={newClick} image={ tile2 }/>
-		<ImageTiles className='cardTiles' onClick={newClick} image={ tile3 }/>
-		<ImageTiles className='cardTiles' onClick={newClick} image={ tile4 }/>
-		</div>
-		);
+  function onClick(tilename) {
+    if (events.includes(tilename)) {
+      alert("no");
+    } else {
+      events.push(tilename);
+      newClick();
+    }
+  }
+
+  return (
+    <div className="body">
+      <ImageTiles
+        className="cardTiles"
+        onClick={() => onClick(tile1)}
+        image={tile1}
+      />
+      <ImageTiles
+        className="cardTiles"
+        onClick={() => onClick(tile2)}
+        image={tile2}
+      />
+      <ImageTiles
+        className="cardTiles"
+        onClick={() => onClick(tile3)}
+        image={tile3}
+      />
+      <ImageTiles
+        className="cardTiles"
+        onClick={() => onClick(tile4)}
+        image={tile4}
+      />
+    </div>
+  );
 }
 
 export default Body;

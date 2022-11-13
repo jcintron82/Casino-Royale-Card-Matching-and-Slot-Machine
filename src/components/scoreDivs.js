@@ -1,8 +1,10 @@
-export function ScoreDivs({ text }) {
-
-	return (
-		<div className='scoreDivs'>{ text } </div>
-		)
+export function ScoreDivs({ scoreType, text }) {
+  return (
+    <div className="scoreDivs">
+      {scoreType}
+      {text}{" "}
+    </div>
+  );
 }
 
 export default ScoreDivs;

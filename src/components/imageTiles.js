@@ -1,20 +1,16 @@
-
-
-
-
-export function ImageTiles({className, onClick, image}) {
-
-
-
-
-	return(
-		<div style={{
+export function ImageTiles({ className, onClick, image, id }) {
+  return (
+    <div
+      style={{
         backgroundImage: `url('${image}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      onClick={ onClick } className={className}> </div>
-		)
+      onClick={onClick}
+      className={className}
+      id={id}
+    ></div>
+  );
 }
 
 export default ImageTiles;
