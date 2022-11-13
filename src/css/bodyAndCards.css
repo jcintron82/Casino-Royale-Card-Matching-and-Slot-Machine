@@ -1,17 +1,25 @@
 .body {
-	background-color: lightgrey;
-	height: 80vh;
+	/*background-image: url('../images/background.avif');
+	background-position: center;
+	background-size: cover;*/
+	height: 90vh;
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
+	overflow-y: hidden;
 }
 
 .cardTiles {
 	border-style: solid;
 	border-color: black;
 	height: 40vh;
-	width: 20vw;
-	margin: 20px;
+	width: 19vw;
+	margin: 10px;
+	background-color: black;
+	background-size: container;
+
+
 }
 .cardTiles:hover {
 

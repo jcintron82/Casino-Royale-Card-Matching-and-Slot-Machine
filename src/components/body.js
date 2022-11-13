@@ -2,14 +2,18 @@ import { ScoreDivs } from "./scoreDivs";
 import { useState, useEffect } from "react";
 import { ImageTiles } from "./imageTiles";
 import { functionFloat, obj } from "./header";
-import pikachuIMG from "../images/pikachu.png";
-import mewIMG from "../images/mew.png";
-import squirtleIMG from "../images/squirtle.jpg";
-import bulbasaurIMG from "../images/bulbasaur.png";
+import grape from "../images/grape.svg";
+import seven from "../images/7.svg";
+import clover from "../images/clover.svg";
+import dice from "../images/dice.svg";
+import diamond from "../images/diamond.svg";
+import cherries from "../images/cherries.svg";
+
 
 const events = [];
 
-const imageArr = [pikachuIMG, squirtleIMG, bulbasaurIMG, mewIMG];
+const imageArr = [grape,seven,clover,dice,diamond,cherries
+];
 
 const arrClear = (arr) => {
 	arr.splice(0, arr.length);
@@ -32,9 +36,8 @@ console.log(obj)
   const [tile3, setTile3] = useState();
   const [tile4, setTile4] = useState();
 
-  // const [tile1, setTile2] = useState()
-  // const [tile1, setTile2] = useState()
-  // const [tile1, setTile2] = useState()
+  const [tile5, setTile5] = useState()
+  const [tile6, setTile6] = useState()
   // const [tile1, setTile2] = useState()
 
   // const [tile1, setTile2] = useState()
@@ -47,6 +50,9 @@ console.log(obj)
     setTileImages(setTile2, imageArr[1]);
     setTileImages(setTile3, imageArr[2]);
     setTileImages(setTile4, imageArr[3]);
+
+    setTileImages(setTile5, imageArr[4]);
+    setTileImages(setTile6, imageArr[5]);
 
     imageArr.sort(() => {
       return Math.random() - 0.5;
@@ -90,6 +96,16 @@ console.log(obj)
         className="cardTiles"
         onClick={() => onClick(tile4)}
         image={tile4}
+      />
+      <ImageTiles
+        className="cardTiles"
+        onClick={() => onClick(tile5)}
+        image={tile5}
+      />
+      <ImageTiles
+        className="cardTiles"
+        onClick={() => onClick(tile6)}
+        image={tile6}
       />
     </div>
   );
