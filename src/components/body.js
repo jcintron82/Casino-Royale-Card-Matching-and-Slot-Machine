@@ -1,7 +1,7 @@
 import { ScoreDivs } from "./scoreDivs";
 import { useState, useEffect } from "react";
 import { ImageTiles } from "./imageTiles";
-import { functionFloat } from "./header";
+import { functionFloat, obj } from "./header";
 import pikachuIMG from "../images/pikachu.png";
 import mewIMG from "../images/mew.png";
 import squirtleIMG from "../images/squirtle.jpg";
@@ -11,6 +11,10 @@ const events = [];
 
 const imageArr = [pikachuIMG, squirtleIMG, bulbasaurIMG, mewIMG];
 
+const arrClear = (arr) => {
+	arr.splice(0, arr.length);
+}
+
 function setTileImages(stateset, image) {
   functionFloat.scoreCounter();
   return stateset(image);
@@ -18,7 +22,7 @@ function setTileImages(stateset, image) {
 
 export function Body() {
   const [xstate, setxstate] = useState(null);
-
+console.log(obj)
   useEffect(() => {
     newClick();
   }, []);
@@ -50,8 +54,15 @@ export function Body() {
   };
 
   function onClick(tilename) {
-    if (events.includes(tilename)) {
-      alert("no");
+    if (events.includes(tilename) && obj.score > obj.highScore) {
+      alert('New High Score!');
+      functionFloat.newHighScore();
+      functionFloat.clearScore();
+      arrClear(events);
+    } else if (events.includes(tilename) && obj.score < obj.highScore) {
+      alert('Maybe Next Time!')
+      functionFloat.clearScore();
+      arrClear(events);
     } else {
       events.push(tilename);
       newClick();

@@ -1,20 +1,27 @@
 import { ScoreDivs } from "./scoreDivs";
 import { useState } from "react";
-
-export const functionFloat = {};
+export { functionFloat, obj }
+ const functionFloat = {};
+ let obj = {}
 
 export function Header({ className }) {
   const [score, setScore] = useState(-1);
   const [highScore, setHighScore] = useState(0);
 
-  const highCounter = () => {
+ obj.score = score;
+ obj.highScore = highScore;
+
+
+
+  functionFloat.newHighScore = () => {
     return setHighScore(score);
   };
 
+  functionFloat.clearScore = () => {
+    return setScore(0);
+  };
+
   functionFloat.scoreCounter = () => {
-    if (highScore > score) {
-      highCounter();
-    }
     return setScore(score + 1);
   };
 
