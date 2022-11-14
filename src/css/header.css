@@ -11,8 +11,6 @@
 	padding: 10px;
 	text-align: center;
 	font-size: 1.25em;
-
-
 }
 
 .gameDescriptionWrap {
@@ -21,8 +19,6 @@
 }
 
 .scoreDivsWrapper {
-	border-style: solid;
-	border-color: black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -30,13 +26,17 @@
 
 }
 
+.scoreHeader {
+	font-size: 1em;
+	padding-right: 10px;
+}
+
 .scoreDivs {
-	border-style: solid;
-	border-color: black;
 	width: 30vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 @media (min-width: 650px) {
@@ -48,19 +48,54 @@
 		font-size: .7em;
 
 	}
+	.scoreDivsWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 1.2em;
+
+	 }
+	.scoreDivs {
+		width: 15vw;
+		display: flex;
+
+
+	}
+	.scoreHeader {
+	display: flex;
+	font-size: 1em;
+	padding-right: 10px;
+	display: flex;
+	width: 6.85vw;
+	justify-content: flex-end;
+
+}
+	.scoreCount {
+		align-self: center;
+		font-size: 3em;
+		background-color: #242124;
+		width: 4vw;
+		text-align: center;
+		border-radius: 10px;
+	}
+
 
 
 }
 
 @media (min-width: 1600px) {
 	.gameTitleWrap {
-		font-size: 1.5em;
+		font-size: 1.4em;
 		max-width: 50%;
 	}
 	.gameDescriptionWrap {
-		font-size: .9em;
+		font-size: .8em;
 		
 	}
+	.scoreHeader {
+	font-size: 1.2em;
+
+}
 
 
 }

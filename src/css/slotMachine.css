@@ -5,16 +5,14 @@
 @media (min-width: 1200px) {
 	.slotsWrapper {
 	display: flex;
-	align-self: center;
 	justify-content: center;
 	border-style: solid;
-	border-color: white;
-/*	height: 400px;*/
-	background-color: white;
+	background-color: #C2C2C2;
 	border-style: solid;
-	border-color: lightblue;
 	border-width: 30px;
-	margin-right: 50px;
+	margin-right: 54px;
+	border-color: #8F0000;
+	border-radius: 30px;
 }
 	.slotDivs {
 		color: white;
@@ -22,31 +20,29 @@
 	
 	}
 
-
-
-/** {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-}
-*/
-
-	 .slotOneAnimation,.slotTwoAnimation, .slotThreeAnimation{
+	 .slotOne,.slotTwo, .slotThree{
 		display: flex;
 		flex-direction: column;
 		background-color:white;
 		color: black;
 		font-size: 8em;
 		border-style: solid;
-		border-color: white;
 		margin: 10px;
-		width: 250px;
-		height: 250px;
+		width: 125px;
+		height: 125px;
 		border-color: black;
+		border-radius: 30px;
+		
 		
 	}
 
 
+}
 
+@media (min-width: 1650px) {
+	 .slotOne,.slotTwo, .slotThree{
+		width: 180px;
+		height: 180px;
 
+	}
 }

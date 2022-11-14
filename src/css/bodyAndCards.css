@@ -42,17 +42,19 @@
     outline: solid #f00 1px !important;
 }*/
 @media(min-width:1200px) {
-
+.body {
+	justify-content: space-between;
+}
 
 	.tilesWrapper {
 		justify-content: flex-start;
-		max-width: 60%;
-		margin-left: 50px;
+		margin-left: 30px;
+		width: 65%;
 	}
 
 	.cardTiles {
-		min-height: 30vh;
-		min-width: 14vw;
+		min-height: 8rem;
+		min-width: 10rem;
 
 	}
 	.cardTiles:hover {
@@ -60,4 +62,12 @@
 }
 
 }
+
+@media (min-width: 1550px) {
+		.cardTiles {
+		min-height: 30vh;
+		min-width: 25%;
+
+	}
+	}
 

@@ -115,9 +115,9 @@ export function Body() {
         />
       </div>
       <div className="slotsWrapper">
-        <SlotDivOne />
-        <SlotDivTwo className="slotTwo" />
-        <SlotDivThree className="slotThree" />
+        <SlotDivOne  />
+        <SlotDivTwo />
+        <SlotDivThree  />
       </div>
     </div>
   );

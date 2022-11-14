@@ -45,7 +45,7 @@ export function SlotDivOne({ text }) {
   return (
     <div>
       <div
-        className="slotOneAnimation"
+        className="slotOne"
         style={{
           backgroundImage: `url('${slotImage}')`,
           backgroundSize: "cover",

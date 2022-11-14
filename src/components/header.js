@@ -32,12 +32,13 @@ export function Header({ className }) {
         Casino Royale!
         <div className='gameDescriptionWrap'>
           {" "}
-          Select all the cards..but not the same twice!{" "}
+          Select all the cards..but not the same one twice! Achieve a new high score to spin
+          the slot machine!{" "}
         </div>
       </div>
       <div className="scoreDivsWrapper">
         <ScoreDivs scoreType="Score: " text={score} />
-        <ScoreDivs scoreType="High: " text={highScore} />
+        <ScoreDivs scoreType="High Score: " text={highScore} />
         <div>{}</div>
       </div>
     </div>
