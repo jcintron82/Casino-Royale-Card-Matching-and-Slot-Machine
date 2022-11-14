@@ -37,21 +37,6 @@
 
 }
 
-.slotsWrapper {
-	display: none;
-}
-
-@media (min-width: 1200px) {
-	.slotsWrapper {
-	display: flex;
-	border-style: solid;
-	border-color: white;
-	width: 35%;
-	justify-content: center;
-	margin-right: 30px;
-	color: white;
-}
-
 	.tilesWrapper {
 		justify-content: flex-start;
 		padding-left: 20px;
@@ -70,4 +55,4 @@
 		background-color: #A30000;
 }
 
-}
+
