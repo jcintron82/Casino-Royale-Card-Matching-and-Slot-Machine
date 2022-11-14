@@ -3,7 +3,7 @@
 }
 
 @media (min-width: 1200px) {
-	.slotsWrapper {
+.slotsWrapper {
 	display: flex;
 	justify-content: center;
 	border-style: solid;
@@ -14,35 +14,28 @@
 	border-color: #8F0000;
 	border-radius: 30px;
 }
-	.slotDivs {
-		color: white;
-		padding: 1rem;
+.slotDivs {
+	color: white;
+	padding: 1rem;
 	
 	}
 
-	 .slotOne,.slotTwo, .slotThree{
-		display: flex;
-		flex-direction: column;
-		background-color:white;
-		color: black;
-		font-size: 8em;
-		border-style: solid;
-		margin: 10px;
-		width: 125px;
-		height: 125px;
-		border-color: black;
-		border-radius: 30px;
-		
-		
-	}
-
-
-}
+.slotOne,.slotTwo, .slotThree{
+	display: flex;
+	flex-direction: column;
+	background-color:white;
+	color: black;
+	font-size: 8em;
+	border-style: solid;
+	margin: 10px;
+	width: 125px;
+	height: 125px;
+	border-color: black;
+	border-radius: 30px;	
+	}}
 
 @media (min-width: 1650px) {
 	 .slotOne,.slotTwo, .slotThree{
 		width: 180px;
 		height: 180px;
-
-	}
-}
+	}}

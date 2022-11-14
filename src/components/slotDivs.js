@@ -5,11 +5,15 @@ import ace from "../images/ace.svg";
 import spade from "../images/spade.svg";
 import grape from "../images/grape.svg";
 import seven from "../images/7.svg";
-import clover from "../images/clover.svg";
-import orange from "../images/orange.svg";
+import redchip from "../images/redchip.svg";
+import yellowchip from "../images/yellowchip.svg";
+export { slotWinStorage }
+const slotWinStorage = {};
 
 
-export const arr = [domino, ace, spade, grape, seven, clover, orange];
+
+
+const arr = [domino,ace,spade,grape,seven,redchip,yellowchip];
 const newArr = [];
 let count = 0;
 
@@ -32,12 +36,12 @@ export function SlotDivOne({ text }) {
       arr.push(newArr[0]);
       newArr.splice(0, 1);
       count++;
-      console.log(count);
     }
 
     if (count > 45) {
-      setSlotImage(arr[0]);
       clearInterval(slotFloat.reelOneSpin);
+      setSlotImage(arr[0]);
+      slotWinStorage.reelOne = arr[0]
       count = 0;
     }
   };

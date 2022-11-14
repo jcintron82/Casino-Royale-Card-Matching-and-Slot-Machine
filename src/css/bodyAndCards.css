@@ -36,15 +36,11 @@
 	border-radius: 10px;
 
 }
-/** {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-}*/
+
 @media(min-width:1200px) {
 .body {
 	justify-content: space-between;
-}
+	}
 
 	.tilesWrapper {
 		justify-content: flex-start;
@@ -55,19 +51,15 @@
 	.cardTiles {
 		min-height: 8rem;
 		min-width: 10rem;
-
 	}
+
 	.cardTiles:hover {
 		box-shadow: 2px 2px 10px 10px red;
-}
-
-}
+}}
 
 @media (min-width: 1550px) {
 		.cardTiles {
 		min-height: 30vh;
 		min-width: 25%;
-
-	}
-	}
+	}}
 

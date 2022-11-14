@@ -64,14 +64,13 @@ export function Body() {
 
   function onClick(tilename) {
     if (clickedTiles.includes(tilename) && obj.score > obj.highScore) {
-      //Pop up with button to spin?
       //functionFloat can be found in the Header component in header.js
       functionFloat.newHighScore();
       functionFloat.clearScore();
       arrClear(clickedTiles);
       slotSpin();
     } else if (clickedTiles.includes(tilename) && obj.score < obj.highScore) {
-      alert("Maybe Next Time!");
+      alert("No High Score. Maybe Next Time!");
       functionFloat.clearScore();
       arrClear(clickedTiles);
     } else {
