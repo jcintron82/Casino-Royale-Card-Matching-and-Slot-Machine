@@ -5,13 +5,16 @@
 @media (min-width: 1200px) {
 	.slotsWrapper {
 	display: flex;
+	align-self: center;
+	justify-content: center;
 	border-style: solid;
 	border-color: white;
-	width: 35%;
-	margin-right: 30px;
-	max-height: 30vh;
-	overflow: hidden;
-	
+/*	height: 400px;*/
+	background-color: white;
+	border-style: solid;
+	border-color: lightblue;
+	border-width: 30px;
+	margin-right: 50px;
 }
 	.slotDivs {
 		color: white;
@@ -20,49 +23,29 @@
 	}
 
 
-	.slotOne, .slotTwo, .slotThree{
-			display: flex;
-		flex-direction: column;
-		height: 100px;
-		background-color: lightpink;
-		color: black;
-		font-size: 8em;
-		border-style: solid;
-		border-color: white;
-		margin: 10px;
-		width: 10vw;
-		height: 25vh;
-		text-align: center;
-		
-	}
 
-
-
-
-
-
-	@keyframes scroll {
-	  50% {margin-bottom: 30vh;}
-	}
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+*/
 
 	 .slotOneAnimation,.slotTwoAnimation, .slotThreeAnimation{
 		display: flex;
 		flex-direction: column;
-		height: 100px;
-		background-color: lightpink;
+		background-color:white;
 		color: black;
 		font-size: 8em;
-		/*position: relative;
-		animation: scroll 1s 1s linear forwards;*/
-
 		border-style: solid;
 		border-color: white;
 		margin: 10px;
-		width: 10vw;
-		height: 25vh;
-		text-align: center;
+		width: 250px;
+		height: 250px;
+		border-color: black;
 		
 	}
+
 
 
 

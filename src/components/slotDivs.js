@@ -6,8 +6,10 @@ import spade from "../images/spade.svg";
 import grape from "../images/grape.svg";
 import seven from "../images/7.svg";
 import clover from "../images/clover.svg";
+import orange from "../images/orange.svg";
 
-export const arr = [domino, ace, spade, grape, seven, clover];
+
+export const arr = [domino, ace, spade, grape, seven, clover, orange];
 const newArr = [];
 let count = 0;
 

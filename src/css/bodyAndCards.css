@@ -24,8 +24,8 @@
 .cardTiles {
 	border-style: solid;
 	border-color: black;
-	min-height: 20vh;
-	min-width: 20vw;
+	min-height: 15vh;
+	min-width: 15vw;
 	margin: 10px;
 	padding: 1rem;
 	background-color: #151415;
@@ -36,11 +36,18 @@
 	border-radius: 10px;
 
 }
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}*/
+@media(min-width:1200px) {
+
 
 	.tilesWrapper {
 		justify-content: flex-start;
-		padding-left: 20px;
 		max-width: 60%;
+		margin-left: 50px;
 	}
 
 	.cardTiles {
@@ -51,8 +58,6 @@
 	.cardTiles:hover {
 		box-shadow: 2px 2px 10px 10px red;
 }
-	.cardTiles:click {
-		background-color: #A30000;
-}
 
+}
 
