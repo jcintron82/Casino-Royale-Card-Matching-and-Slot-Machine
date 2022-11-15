@@ -1,6 +1,8 @@
 # Casino Royale Memory Game 
 
  ![casinoRoyaleGif](https://user-images.githubusercontent.com/71289948/201804577-78c2d80a-98fb-49c5-933d-4dd9aee08d30.gif)
+ 
+ See a live demo - https://jcintron82.github.io/Memory-Game/
 
 This is a memory matching game which has the added effect of having a slot machine roll happen when a new high score is reached. I originally started this project as a way to solidify my knowledge with React and React hooks and the original plan was to do a Pokemon matching game; perfect right? I quickly realized not only how common matching games were, but just how played out the Pokemon themed ones are. In my quest to do something a bit more original than the stale matching game every new React dev does, Casino Royale was born. 
 
