@@ -1,4 +1,3 @@
-import { ScoreDivs } from "./scoreDivs";
 import { useState, useEffect } from "react";
 import { ImageTiles } from "./imageTiles";
 import { functionFloat, obj } from "./header";
@@ -11,7 +10,6 @@ import clover from "../images/clover.svg";
 import dice from "../images/dice.svg";
 import diamond from "../images/diamond.svg";
 import cherries from "../images/cherries.svg";
-import { arr } from "./slotDivs";
 
 export const slotFloat = {};
 

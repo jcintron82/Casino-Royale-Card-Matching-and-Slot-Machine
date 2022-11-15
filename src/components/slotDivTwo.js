@@ -27,7 +27,7 @@ export function SlotDivTwo({ text }) {
     newArr.push(arr[0]);
     arr.splice(0, 1);
     count++;
-    if (arr.length == 0) {
+    if (arr.length === 0) {
       setSlotImage2(newArr[0]);
       arr.push(newArr[0]);
       newArr.splice(0, 1);
