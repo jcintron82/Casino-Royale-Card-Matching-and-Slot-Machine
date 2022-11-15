@@ -11,5 +11,6 @@ I hope you enjoy my application and if you manage to hit the jackpot on my slot,
 
 Image Credits: 
 
-Icons by svgrepo.com
+Icons by https://www.svgrepo.com
+
 https://www.svgrepo.com/page/licensing
