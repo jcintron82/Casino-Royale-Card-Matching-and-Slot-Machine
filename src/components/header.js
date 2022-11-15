@@ -1,8 +1,8 @@
 import { ScoreDivs } from "./scoreDivs";
 import { useState } from "react";
-export { functionFloat, obj }
- const functionFloat = {};
- let obj = {}
+export { functionFloat, obj };
+const functionFloat = {};
+let obj = {};
 
 export function Header({ className }) {
   const [score, setScore] = useState(-1);
@@ -32,8 +32,9 @@ export function Header({ className }) {
         Casino Royale!
         <div className='gameDescriptionWrap'>
           {" "}
-          Select all the cards..but not the same one twice! Achieve a new high score to spin
-          the slot machine!{" "}
+          <div>Select all the cards..but not the same one twice! </div>
+          <div className='slotDescription'>Achieve a new high score to spin
+          the slot machine!</div>{" "}
         </div>
       </div>
       <div className="scoreDivsWrapper">

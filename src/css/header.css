@@ -28,19 +28,34 @@
 }
 
 .scoreHeader {
-	font-size: .8em;
-	padding-right: 10px;
+	font-size: .7em;
+	padding-right: 0;
+	display: flex;
+}
+
+.slotDescription {
+	display: none;
 }
 
 .scoreDivs {
-	width: 30vw;
+	width: 35vw;
 	display: flex;
 	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	font-family: 'Lato', sans-serif;
-
-	
 }
+
+.scoreCount {
+	align-self: center;
+	font-size: 1.25em;
+	background-color: #242124;
+	width: 8vw;
+	text-align: center;
+	border-radius: 10px;
+	margin-right: 5px;
+   }
+
 
 @media (min-width: 650px) {
 .gameTitleWrap {
@@ -59,7 +74,7 @@
 
 	 }
 .scoreDivs {
-	width: 15vw;
+	width: 25vw;
 	display: flex;
 
 	}
@@ -81,6 +96,12 @@
 	text-align: center;
 	border-radius: 10px;
    }}
+
+@media (min-width:1200px) {
+	.slotDescription {
+		display: flex;
+}
+}
 
 @media (min-width: 1600px) {
 .gameTitleWrap {
